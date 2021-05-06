@@ -22,17 +22,14 @@ int main() {
     for (int i = 1; i <= 15; ++i) {
         bool print_num = true;
         if (i % 3 == 0) {
-            // fizz
             print("fizz");
             print_num = false;
         }
         if (i % 5 == 0) {
-            // buzz
             print("buzz");
             print_num = false;
         }
         if (print_num) {
-            // i
             char buf[3];
             if (i > 9) {
                 buf[0] = '0' + (i / 10);
@@ -45,7 +42,6 @@ int main() {
             print(buf);
         }
         print("\n");
-        // \n
     }
     return 0;
 }
